@@ -1,5 +1,10 @@
 package it.unibs.PgAr.RovinePerdute;
 
-public class RovineMain {
+import javax.xml.stream.XMLStreamException;
 
+public class RovineMain {
+    public static void main(String[] args) throws XMLStreamException {
+        RovinePerdute rovine = new RovinePerdute();
+        rovine.scriviGrafo();
+    }
 }

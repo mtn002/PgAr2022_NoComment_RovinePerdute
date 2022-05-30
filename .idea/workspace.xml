@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="aa77e938-c88d-492d-b992-b4ab05947394" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RovineMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/RovineMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Copy of PgAr_Map_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Map5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Nodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Nodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/RovineMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/RovineMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/RovinePerdute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/RovinePerdute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,31 @@
     "last_opened_file_path": "C:/Users/Martina/IdeaProjects/RovinePerdute/src/it/unibs/PgAr/RovinePerdute"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Martina\IdeaProjects\RovinePerdute\src\it\unibs\PgAr\RovinePerdute" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RovineMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unibs.PgAr.RovinePerdute.RovineMain" />
+      <module name="RovinePerdute" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unibs.PgAr.RovinePerdute.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RovineMain" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
