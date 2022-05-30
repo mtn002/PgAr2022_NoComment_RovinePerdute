@@ -1,11 +1,9 @@
 package it.unibs.PgAr.RovinePerdute;
 import jdk.jshell.spi.ExecutionControl;
 
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamConstants;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
+import javax.xml.stream.*;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.util.*;
 public class RovinePerdute {
@@ -80,11 +78,45 @@ public class RovinePerdute {
 
     }
 
-    public void scriviXML(){
-
-
+    public void scriviXML() throws XMLStreamException {
+        XMLOutputFactory xmlof = null;
+        XMLStreamWriter xmlw = null;
+        try {
+            xmlof = XMLOutputFactory.newInstance();
+            xmlw = xmlof.createXMLStreamWriter(new FileOutputStream("Routes.xml"), "utf-8");
+            xmlw.writeStartDocument("utf-8", "1.0");
+        } catch (Exception e) {
+            System.out.println("Errore nell'inizializzazione del writer:");
+            System.out.println(e.getMessage());
+        }
+        xmlw.writeStartDocument("routes");
+        xmlw.writeStartElement("route");
+        xmlw.writeAttribute("team", "Tonathiu");
+        xmlw.writeAttribute("cost", "carburante_utilizzato"); //cambiare la string con un getter e un tostring
+        xmlw.writeAttribute("cities", "numero_città_toccate"); //come sopra
+        for (int i=0; i<citta.lenght; i++){ //nome vettore da modificare citta solo per esempio
+            xmlw.writeStartElement("city");
+            xmlw.writeAttribute("id", citta(i).getId.toString()); //come sopra
+            xmlw.writeAttribute("name", citta(i).getName.toString()); //come sopra
+            xmlw.writeEndElement();
+        }
+        xmlw.writeEndElement();
+        xmlw.writeStartElement("route");
+        xmlw.writeAttribute("team", "Metztli");
+        xmlw.writeAttribute("cost", "carburante_utilizzato"); //cambiare la string con un getter e un tostring
+        xmlw.writeAttribute("cities", "numero_città_toccate"); //come sopra
+        for (int i=0; i<citta.lenght; i++){
+            xmlw.writeStartElement("city");
+            xmlw.writeAttribute("id", citta(i).getId.toString()); //come sopra
+            xmlw.writeAttribute("name", citta(i).getName.toString()); //come sopra
+            xmlw.writeEndElement();
+        }
+        xmlw.writeEndElement();
+        xmlw.writeEndDocument();
     }
 
     //agg metodo per ricerca percorso migliore
+
+
 
 }
