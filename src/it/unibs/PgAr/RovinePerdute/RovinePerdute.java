@@ -65,7 +65,7 @@ public class RovinePerdute {
                                     //int DirezioneCitta = xmlr.getAttributeValue();
 
                              //}
-                                 //predo l'attributo e lo metto nell'arraylist di collegamenti
+                                 //prendo l'attributo e lo metto nell'arraylist di collegamenti
 
                      }
 
