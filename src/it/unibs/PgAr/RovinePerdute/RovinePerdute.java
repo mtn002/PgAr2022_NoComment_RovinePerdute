@@ -7,77 +7,77 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.util.*;
 public class RovinePerdute {
-    private LinkedList <Nodo> mappa = new LinkedList <Nodo>();
+    private LinkedList <Città> mappa = new LinkedList <Città>();
 
     //Questo metodo costituisce "leggi XML"
-    public void scriviGrafo () throws XMLStreamException {
+    public void scriviGrafo (String filename) throws XMLStreamException {
         //inizializzazione
-        XMLInputFactory xmlif;
+        XMLInputFactory xmlif= null;
         XMLStreamReader xmlr = null;
         try{
             xmlif = XMLInputFactory.newInstance();
-            xmlr = xmlif.createXMLStreamReader("Map5.xml", new FileInputStream("Map5.xml"));
+            xmlr = xmlif.createXMLStreamReader(filename, new FileInputStream(filename));
         } catch (Exception e){
             System.out.println("Errore nell'inizializzazione del reader:");
             System.out.println(e.getMessage());
         }
 
-        while(xmlr.hasNext()){
-            switch (xmlr.getEventType()){
-                case XMLStreamConstants.START_DOCUMENT:
-                    xmlr.getAttributeValue(0);
-                    break;
-                case XMLStreamConstants.START_ELEMENT:
-                    Nodo nodo = new Nodo();
-                    if (xmlr.getLocalName().equals("City")){
-                        for (int i=0; i<xmlr.getAttributeCount(); i++){
-                            switch (i){
-                                case 0:
-                                    int ID=  Integer.parseInt(xmlr.getAttributeValue(i));
-                                    nodo.getCitta().setID(ID);
-                                    break;
-                                case 1:
-                                    nodo.getCitta().setNome(xmlr.getAttributeValue(i));
-                                    break;
-                                case 2:
-                                    int x= Integer.parseInt(xmlr.getAttributeValue(i));
-                                    nodo.getCitta().setX(x);
-                                    break;
-                                case 3:
-                                    int y =Integer.parseInt(xmlr.getAttributeValue(i));
-                                    nodo.getCitta().setY(y);
-                                    break;
-                                case 4:
-                                    int h = Integer.parseInt(xmlr.getAttributeValue(i));
-                                    nodo.getCitta().setH(h);
-                                    break;
-                            }
+        while (xmlr.hasNext()) { // continua a leggere finché ha eventi a disposizione
+            switch (xmlr.getEventType()) { // switch sul tipo di evento
+                case XMLStreamConstants.START_DOCUMENT: // inizio del documento: stampa che inizia il documento
+                    System.out.println("Start Read Doc " + filename); break;//Caso con la mappa da 5 cita
 
-                        }
+                case XMLStreamConstants.START_ELEMENT: // inizio di un elemento: stampa il nome del tag e i suoi attributi
+                    System.out.println("Tag " + xmlr.getLocalName());
+                    while(xmlr.getEventType() != XMLStreamConstants.END_ELEMENT &&
+                            xmlr.getLocalName().equals("city")){
+                        if (xmlr.getLocalName().equals("city")){
+                            Città citta = new Città("null", 0, 0, 0, 0);
+                            for (int i=0; i<xmlr.getAttributeCount(); i++){
+                                switch (i){
+                                    case 0:
+                                        int ID=  Integer.parseInt(xmlr.getAttributeValue(i));
+                                        citta.setID(ID);
+                                        break;
+                                    case 1:
+                                        citta.setNome(xmlr.getAttributeValue(i));
+                                        break;
+                                    case 2:
+                                        int x= Integer.parseInt(xmlr.getAttributeValue(i));
+                                        citta.setX(x);
+                                        break;
+                                    case 3:
+                                        int y =Integer.parseInt(xmlr.getAttributeValue(i));
+                                        citta.setY(y);
+                                        break;
+                                    case 4:
+                                        int h = Integer.parseInt(xmlr.getAttributeValue(i));
+                                        citta.setH(h);
+                                        break;
+                                }
+                                mappa.add(citta);
+                            }//fuori dal for
+                        }//fine if
+                        xmlr.next();
+                           // if(xmlr.getLocalName() != XMLStreamConstants.START_ELEMENT &&
+                                           // xmlr.getLocalName().equals("link")){
 
-                    }
-                    else {
-                        int ID=0;
-                        for (int i=0; i< xmlr.getAttributeCount(); i++){
-                            if (xmlr.getText().trim().length()>0) {
-                                ID = Integer.parseInt(xmlr.getAttributeValue(i));
-                                nodo.getPuntaA().set(i, ID);
-                                System.out.printf ("Attributo %s ->%s%n", xmlr.getAttributeLocalName(i), xmlr.getAttributeValue(i));
-                            }
-                        }
+                                    //int DirezioneCitta = xmlr.getAttributeValue();
 
-                    }
-                    mappa.add(nodo);
-                    break;
-                case XMLStreamConstants.END_ELEMENT:
+                             //}
+                                 //predo l'attributo e lo metto nell'arraylist di collegamenti
+
+                     }
+
                     break;
 
 
             }
+            xmlr.next();
         }
 
-    }
 
+/*
     public void scriviXML() throws XMLStreamException {
         XMLOutputFactory xmlof = null;
         XMLStreamWriter xmlw = null;
@@ -112,11 +112,10 @@ public class RovinePerdute {
             xmlw.writeEndElement();
         }
         xmlw.writeEndElement();
-        xmlw.writeEndDocument();
+        xmlw.writeEndDocument();*/
     }
 
     //agg metodo per ricerca percorso migliore
-
 
 
 }

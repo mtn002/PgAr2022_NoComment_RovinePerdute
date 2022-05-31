@@ -1,9 +1,14 @@
 package it.unibs.PgAr.RovinePerdute;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class Città {
     private String nome;
     private double x, y, h;
     private int ID;
+
+    public LinkedList <Città> citta = new LinkedList<>();
 
     public Città (String nome, double x, double y, double h, int ID){
         this.nome = nome;
@@ -11,6 +16,7 @@ public class Città {
         this.y=y;
         this.h=h;
         this.ID = ID;
+        //cittavicine<ArrayList>
     }
 
     public String getNome() {
