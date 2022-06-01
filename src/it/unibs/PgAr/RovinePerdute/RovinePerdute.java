@@ -10,7 +10,7 @@ public class RovinePerdute {
     private LinkedList <Città> mappa = new LinkedList <Città>();
 
     //Questo metodo costituisce "leggi XML"
-    public void scriviGrafo (String filename) throws XMLStreamException {
+    public void scriviGrafo (String filename, Double[][] map) throws XMLStreamException {
         //inizializzazione
         XMLInputFactory xmlif= null;
         XMLStreamReader xmlr = null;
@@ -23,57 +23,66 @@ public class RovinePerdute {
         }
 
         while (xmlr.hasNext()) { // continua a leggere finché ha eventi a disposizione
-            switch (xmlr.getEventType()) { // switch sul tipo di evento
-                case XMLStreamConstants.START_DOCUMENT: // inizio del documento: stampa che inizia il documento
-                    System.out.println("Start Read Doc " + filename); break;//Caso con la mappa da 5 cita
-
-                case XMLStreamConstants.START_ELEMENT: // inizio di un elemento: stampa il nome del tag e i suoi attributi
-                    System.out.println("Tag " + xmlr.getLocalName());
-                    while(xmlr.getEventType() != XMLStreamConstants.END_ELEMENT &&
-                            xmlr.getLocalName().equals("city")){
-                        if (xmlr.getLocalName().equals("city")){
-                            Città citta = new Città("null", 0, 0, 0, 0);
-                            for (int i=0; i<xmlr.getAttributeCount(); i++){
-                                switch (i){
-                                    case 0:
-                                        int ID=  Integer.parseInt(xmlr.getAttributeValue(i));
-                                        citta.setID(ID);
-                                        break;
-                                    case 1:
-                                        citta.setNome(xmlr.getAttributeValue(i));
-                                        break;
-                                    case 2:
-                                        int x= Integer.parseInt(xmlr.getAttributeValue(i));
-                                        citta.setX(x);
-                                        break;
-                                    case 3:
-                                        int y =Integer.parseInt(xmlr.getAttributeValue(i));
-                                        citta.setY(y);
-                                        break;
-                                    case 4:
-                                        int h = Integer.parseInt(xmlr.getAttributeValue(i));
-                                        citta.setH(h);
-                                        break;
-                                }
-                                mappa.add(citta);
-                            }//fuori dal for
-                        }//fine if
+            if (xmlr.getEventType() == XMLStreamConstants.START_ELEMENT ) {
+                //fino a che è diverso da un end element ed è uguale a city continua a rimanere nel while
+                while(xmlr.getEventType() != XMLStreamConstants.END_ELEMENT && xmlr.getLocalName().equals("city")){
+                    if (xmlr.getLocalName().equals("city")){ //se il tag è uguale a city prende gli attributi e crea una nuova città con tali attributi
+                        Città citta = new Città("", 0, 0, 0, 0);
+                        int numeroLink = 0;
+                        for (int i=0; i<xmlr.getAttributeCount(); i++){
+                            switch (i){
+                                case 0:
+                                    int ID=  Integer.parseInt(xmlr.getAttributeValue(i));
+                                    citta.setID(ID);
+                                    break;
+                                case 1:
+                                    citta.setNome(xmlr.getAttributeValue(i));
+                                    break;
+                                case 2:
+                                    int x= Integer.parseInt(xmlr.getAttributeValue(i));
+                                    citta.setX(x);
+                                    break;
+                                case 3:
+                                    int y =Integer.parseInt(xmlr.getAttributeValue(i));
+                                    citta.setY(y);
+                                    break;
+                                case 4:
+                                    int h = Integer.parseInt(xmlr.getAttributeValue(i));
+                                    citta.setH(h);
+                                    break;
+                            }
+                        }//qui passa al tag successivo
                         xmlr.next();
-                           // if(xmlr.getLocalName() != XMLStreamConstants.START_ELEMENT &&
-                                           // xmlr.getLocalName().equals("link")){
+                        //entra nel while se il prossimo tag è appunto un link e esce quando non lo è più e nel mentre conta quanti link ha questa città
+                        while(xmlr.getLocalName().equals("link")){
+                            xmlr.next();
+                            numeroLink += 1;
+                            citta.setNumeroLinkCitta(numeroLink);
+                        }
+                        mappa.add(citta);//infine aggiunge la città alla mappa alla posizione del suo id
+                    }
+                    xmlr.next(); //se non è uguale a city passo a quello dopo fino a che non arrivo ad un'altra city
+                }//a questo punto dovrei avere la mappa piena delle città con i relativi attributi
+                //ricomincio la lettura del xml e ogni qualvolta leggo un tag chiamato link, metto nella tabella map al posto id della mappa e link il valore della distanza tra le due città
+                //fino a che è diverso da un end element ed è uguale a link continua a rimanere nel while
+                while(xmlr.getEventType() != XMLStreamConstants.END_ELEMENT && xmlr.getLocalName().equals("link")) {
+                    if (xmlr.getLocalName().equals("link")) {
+                        for (int i =0; i<mappa.size(); i++){ //scorro tutta la linked list e per ogni città aggiungo quelle a cui è connessa
+                           for (int j=0; j<mappa.get(i).getNumeroLinkCitta(); i++) {
+                               int link_a_citta = Integer.parseInt(xmlr.getAttributeValue(0)); //imposta il valore di link_a_citta = il valore dell'attributo di link alla prima posizione
+                               xmlr.next();
+                               double distanza = mappa.get(i).determinaDistanza(mappa.get(link_a_citta));
+                               distanza = map[i][link_a_citta];
+                           }
+                        }
 
-                                    //int DirezioneCitta = xmlr.getAttributeValue();
-
-                             //}
-                                 //prendo l'attributo e lo metto nell'arraylist di collegamenti
-
-                     }
-
-                    break;
+                    }
+                    xmlr.next();
+                }
 
 
             }
-            xmlr.next();
+
         }
 
 

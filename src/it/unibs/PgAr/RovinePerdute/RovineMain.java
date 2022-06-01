@@ -17,28 +17,28 @@ public class RovineMain {
             scelta = menu.scegli();
             switch (scelta){
                 case 1:
-                    rovine.scriviGrafo("Map5.xml");
                     map = new Double[5][5];
+                    rovine.scriviGrafo("Map5.xml", map);
                     break;
                 case 2:
-                    rovine.scriviGrafo("Map12.xml");
                     map = new Double[12][12];
+                    rovine.scriviGrafo("Map12.xml", map);
                     break;
                 case 3:
-                    rovine.scriviGrafo("Map50.xml");
                     map = new Double[50][50];
+                    rovine.scriviGrafo("Map50.xml", map);
                     break;
                 case 4:
-                    rovine.scriviGrafo("Map200.xml");
                     map = new Double[200][200];
+                    rovine.scriviGrafo("Map200.xml", map);
                     break;
                 case 5:
-                    rovine.scriviGrafo("Map2000.xml");
                     map = new Double[2000][2000];
+                    rovine.scriviGrafo("Map2000.xml", map);
                     break;
                 case 6:
-                    rovine.scriviGrafo("Map10000.xml");
                     map = new Double[10000][10000];
+                    rovine.scriviGrafo("Map10000.xml", map);
                     break;
             }
         }while(scelta != 0);

@@ -8,7 +8,7 @@ public class Città {
     private double x, y, h;
     private int ID;
 
-    public LinkedList <Città> citta = new LinkedList<>();
+    private int numeroLinkCitta;
 
     public Città (String nome, double x, double y, double h, int ID){
         this.nome = nome;
@@ -17,6 +17,14 @@ public class Città {
         this.h=h;
         this.ID = ID;
         //cittavicine<ArrayList>
+    }
+
+    public int getNumeroLinkCitta() {
+        return numeroLinkCitta;
+    }
+
+    public void setNumeroLinkCitta(int numeroLinkCitta) {
+        this.numeroLinkCitta = numeroLinkCitta;
     }
 
     public String getNome() {
@@ -57,5 +65,9 @@ public class Città {
 
     public void setID(int ID) {
         this.ID = ID;
+    }
+
+    public double determinaDistanza(Città citta){
+        return Math.sqrt((Math.pow((this.getX()- citta.getX()), 2))-(Math.pow((this.getY()- citta.getY()), 2)));
     }
 }
