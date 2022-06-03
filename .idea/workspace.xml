@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa77e938-c88d-492d-b992-b4ab05947394" name="Changes" comment="Eliminata la classe Nodo&#10;Modifica del nome delle classi: &#10;- RovinePerdute.java -&gt; InteragisciXML.java&#10;- RovineMain.java -&gt; Main.java&#10;- Città.java -&gt; Citta.java&#10;Modifica dei metodi calcola percorso nelle classi Metzili.java e Tonatiuh.java&#10;Modifica del nome di scriviGrafo in creaGrafo&#10;Modifica del metodo creaGrafo da void ora produce una LinkedList di Citta&#10;Creato metodo private scritturaTagTeam in InteragisciXML.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aa77e938-c88d-492d-b992-b4ab05947394" name="Changes" comment="aggiunta metodo trovaPercorso in Main">
       <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654259216401</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="aggiunta metodo trovaPercorso in Main">
+      <created>1654263817438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654263817438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +142,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Impostazione della selezione sul main" />
     <MESSAGE value="Eliminata la classe Nodo&#10;Modifica del nome delle classi: &#10;- RovinePerdute.java -&gt; InteragisciXML.java&#10;- RovineMain.java -&gt; Main.java&#10;- Città.java -&gt; Citta.java&#10;Modifica dei metodi calcola percorso nelle classi Metzili.java e Tonatiuh.java&#10;Modifica del nome di scriviGrafo in creaGrafo&#10;Modifica del metodo creaGrafo da void ora produce una LinkedList di Citta&#10;Creato metodo private scritturaTagTeam in InteragisciXML.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Eliminata la classe Nodo&#10;Modifica del nome delle classi: &#10;- RovinePerdute.java -&gt; InteragisciXML.java&#10;- RovineMain.java -&gt; Main.java&#10;- Città.java -&gt; Citta.java&#10;Modifica dei metodi calcola percorso nelle classi Metzili.java e Tonatiuh.java&#10;Modifica del nome di scriviGrafo in creaGrafo&#10;Modifica del metodo creaGrafo da void ora produce una LinkedList di Citta&#10;Creato metodo private scritturaTagTeam in InteragisciXML.java" />
+    <MESSAGE value="aggiunta metodo trovaPercorso in Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunta metodo trovaPercorso in Main" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,11 +6,11 @@ import java.io.FileOutputStream;
 import java.util.*;
 public class InteragisciXML {
     //Questo metodo costituisce "leggi XML"
-    public LinkedList<Citta> creaGrafo(String filename, double[][] map) throws XMLStreamException {
+    public LinkedList<Citta> creaGrafo(String filename, double[][] mappaVeicolo1, double[][] mappaVeicolo2) throws XMLStreamException {
         //inizializzazione
         XMLInputFactory xmlif;
         XMLStreamReader xmlr = null;
-        LinkedList<Citta> mappa = new LinkedList<>();
+        LinkedList<Citta> listaCitta = new LinkedList<>();
         try {
             xmlif = XMLInputFactory.newInstance();
             xmlr = xmlif.createXMLStreamReader(filename, new FileInputStream(filename));
@@ -54,20 +54,22 @@ public class InteragisciXML {
                             numeroLink += 1;
                             citta.setNumeroLinkCitta(numeroLink);
                         } while (xmlr.getLocalName().equals("link"));
-                        mappa.add(citta);//infine aggiunge la città alla mappa alla posizione del suo id
+                        listaCitta.add(citta);//infine aggiunge la città alla mappa alla posizione del suo id
                     }
                     xmlr.next(); //se non è uguale a city passo a quello dopo fino a che non arrivo a un'altra city
                 }//a questo punto dovrei avere la mappa piena delle città con i relativi attributi
                 //ricomincio la lettura del xml e ogni qualvolta leggo un tag chiamato link, metto nella tabella map al posto id della mappa e link il valore della distanza tra le due città
                 //fino a che è diverso da un end element ed è uguale a link continua a rimanere nel while
+                Tonatiuh veicolo1 = new Tonatiuh();
+                Metzili veicolo2 = new Metzili();
                 while (xmlr.getEventType() != XMLStreamConstants.END_ELEMENT && xmlr.getLocalName().equals("link")) {
                     if (xmlr.getLocalName().equals("link")) {
-                        for (int i = 0; i < mappa.size(); i++) { //scorro tutta la linked list e per ogni città aggiungo quelle a cui è connessa
-                            for (int j = 0; j < mappa.get(i).getNumeroLinkCitta(); i++) {
+                        for (int i = 0; i < listaCitta.size(); i++) { //scorro tutta la linked list e per ogni città aggiungo quelle a cui è connessa
+                            for (int j = 0; j < listaCitta.get(i).getNumeroLinkCitta(); i++) {
                                 int link_a_citta = Integer.parseInt(xmlr.getAttributeValue(0)); //imposta il valore di link_a_citta = il valore dell'attributo di link alla prima posizione
                                 xmlr.next();
-                                double distanza = mappa.get(i).determinaDistanza(mappa.get(link_a_citta));
-                                map[i][link_a_citta] = distanza;
+                                mappaVeicolo1[i][link_a_citta] = veicolo1.calcolaDistanza(listaCitta.get(i), listaCitta.get(link_a_citta));
+                                mappaVeicolo2[i][link_a_citta] = veicolo2.calcoloDistanza(listaCitta.get(i), listaCitta.get(link_a_citta));
                             }
                         }
 
@@ -79,7 +81,7 @@ public class InteragisciXML {
             }
 
         }
-        return mappa;
+        return listaCitta;
     }
     public void scriviXML() throws XMLStreamException {
         XMLOutputFactory xmlof;
