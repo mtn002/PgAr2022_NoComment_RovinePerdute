@@ -6,7 +6,7 @@ import java.io.FileOutputStream;
 import java.util.*;
 public class InteragisciXML {
     //Questo metodo costituisce "leggi XML"
-    public LinkedList<Citta> creaGrafo(String filename, Double[][] map) throws XMLStreamException {
+    public LinkedList<Citta> creaGrafo(String filename, double[][] map) throws XMLStreamException {
         //inizializzazione
         XMLInputFactory xmlif;
         XMLStreamReader xmlr = null;

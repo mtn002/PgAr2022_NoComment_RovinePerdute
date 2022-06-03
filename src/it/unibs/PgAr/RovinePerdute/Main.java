@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) throws XMLStreamException {
     //Far scegliere all'utente quale mappa scegliere
         InteragisciXML rovine = new InteragisciXML();
-        Double[][] map;
-        LinkedList<Citta> grafo = new LinkedList<>();
+        double[][] mappaTonatiuh;
+        LinkedList<Citta> listaCitta = new LinkedList<>();
         int scelta;
         String[] voci = {"Mappa da 5", "Mappa da 12", "Mappa da 50", "Mappa da 200", "Mappa da 2000", "Mappa da 10000"};
         MyMenu menu = new MyMenu("Scegli mappa: ", voci);
@@ -19,30 +19,47 @@ public class Main {
             scelta = menu.scegli();
             switch (scelta) {
                 case 1 -> {
-                    map = new Double[5][5];
-                    grafo = rovine.creaGrafo("Map5.xml", map);
+                    mappaTonatiuh = new double[5][5];
+                    listaCitta = rovine.creaGrafo("Map5.xml", mappaTonatiuh);
+                    //determina percorso migliore veicolo1
+                    trovaPercorso(mappaTonatiuh);
+                    //determina percorso migliore veicolo2
+                    //riempi XML e stampalo
                 }
                 case 2 -> {
-                    map = new Double[12][12];
-                    grafo = rovine.creaGrafo("Map12.xml", map);
+                    mappaTonatiuh = new double[12][12];
+                    listaCitta = rovine.creaGrafo("Map12.xml", mappaTonatiuh);
                 }
                 case 3 -> {
-                    map = new Double[50][50];
-                    grafo = rovine.creaGrafo("Map50.xml", map);
+                    mappaTonatiuh = new double[50][50];
+                    listaCitta = rovine.creaGrafo("Map50.xml", mappaTonatiuh);
                 }
                 case 4 -> {
-                    map = new Double[200][200];
-                    grafo = rovine.creaGrafo("Map200.xml", map);
+                    mappaTonatiuh = new double[200][200];
+                    listaCitta = rovine.creaGrafo("Map200.xml", mappaTonatiuh);
                 }
                 case 5 -> {
-                    map = new Double[2000][2000];
-                    grafo = rovine.creaGrafo("Map2000.xml", map);
+                    mappaTonatiuh = new double[2000][2000];
+                    listaCitta = rovine.creaGrafo("Map2000.xml", mappaTonatiuh);
                 }
                 case 6 -> {
-                    map = new Double[10000][10000];
-                    grafo = rovine.creaGrafo("Map10000.xml", map);
+                    mappaTonatiuh = new double[10000][10000];
+                    listaCitta = rovine.creaGrafo("Map10000.xml", mappaTonatiuh);
                 }
             }
         }while(scelta != 0);
+    }
+
+    private static void trovaPercorso(double[][] mappa){
+        double distanzaPercorsa;
+        int i=0;
+        int j= mappa.length;
+        do {
+            if (mappa[i][j] != 0) {
+                distanzaPercorsa = +mappa[i][j];
+                i = j;
+                j = mappa.length;
+            } else j--;
+        }while(mappa[i][mappa.length]!=0);
     }
 }
