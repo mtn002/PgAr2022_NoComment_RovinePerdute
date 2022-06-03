@@ -5,6 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.*;
 public class InteragisciXML {
+
+    public static final String VM = "Ha vinto Metzili";
+    public static final String VT = "Ha vinto Tonatiuh";
+
     //Questo metodo costituisce "leggi XML"
     public LinkedList<Citta> creaGrafo(String filename, double[][] mappaVeicolo1, double[][] mappaVeicolo2) throws XMLStreamException {
         //inizializzazione
@@ -83,7 +87,7 @@ public class InteragisciXML {
         }
         return listaCitta;
     }
-    public void scriviXML() throws XMLStreamException {
+    public void scriviXML(Tonatiuh t, Metzili m) throws XMLStreamException {
         XMLOutputFactory xmlof;
         XMLStreamWriter xmlw = null;
         try {
@@ -97,9 +101,9 @@ public class InteragisciXML {
         //inizio del doocumento: PRIMO TAG <routes>
         xmlw.writeStartDocument("routes");
 
-        scritturaTagTeam(xmlw, "Tonathiu", 0, 0);
+        scritturaTagTeam(xmlw, "Tonathiu", t.getCarburante(), t.getCittaPassate().size());
 
-        scritturaTagTeam(xmlw, "Metztli", 0, 0);
+        scritturaTagTeam(xmlw, "Metztli", m.getCarburante(), m.getCittaPassate().size());
 
         //fine del documento: CHIUSURA PRIMO TAG <routes>
         xmlw.writeEndDocument();
@@ -110,18 +114,72 @@ public class InteragisciXML {
         xmlw.writeAttribute("team", team_name );
         xmlw.writeAttribute("cost", String.valueOf(carburante_utilizzato));
         xmlw.writeAttribute("cities", String.valueOf(numero_citta_toccate));
-        /*
-        for (int i=0; i<citta.lenght; i++){ //nome vettore da modificare citta solo per esempio
-            xmlw.writeStartElement("city");
-            xmlw.writeAttribute("id", citta(i).getId.toString()); //come sopra
-            xmlw.writeAttribute("name", citta(i).getName.toString()); //come sopra
-            xmlw.writeEndElement();
-        }
-        */
+
         xmlw.writeEndElement();
     }
 
-    //agg metodo per ricerca percorso migliore
+    public void ricercaPercorso (Veicolo v, double[][]mappa, int livello, LinkedList <Citta> citta){
+        boolean found = false;
+        double minimo = 1000000000.0;
+        int indice = 0;
+        int i=0;
+        do{
+
+            for (int j=0; j<livello; j++) {
+                if (minimo > mappa[i][j] && mappa[i][j] > 0) {
+                    minimo = mappa[i][j];
+
+                    indice = j;
+
+                }
+
+            }
+            v.getCittaPassate().add(citta.get(indice));
+            v.setCarburante(v.getCarburante()+mappa[i][indice]);
+            i = indice;
+
+
+        }while (indice != citta.size()-1);
+    }
+
+
+    public void vincitore(Tonatiuh t, Metzili m){
+        if (t.getCarburante()>m.getCarburante())
+            System.out.println(VM);
+        else if (m.getCarburante()>t.getCarburante())
+            System.out.println(VT);
+        else if (m.getCittaPassate().size()>t.getCittaPassate().size())
+            System.out.println(VT);
+        else if (m.getCittaPassate().size()<t.getCittaPassate().size())
+            System.out.println(VM);
+        else if (m.getCittaPassate().get(m.getCittaPassate().size()-1).getID()<t.getCittaPassate().get(t.getCittaPassate().size()-1).getID())
+            System.out.println(VM);
+        else
+            System.out.println(VT);
+
+
+
+    }
+    public void vinto(Tonatiuh t, Metzili m){
+        if (t.getCarburante()>m.getCarburante())
+            System.out.println(VM);
+        else if (m.getCarburante()>t.getCarburante())
+            System.out.println(VT);
+        else if (m.getCittaPassate().size()>t.getCittaPassate().size())
+            System.out.println(VT);
+        else if (m.getCittaPassate().size()<t.getCittaPassate().size())
+            System.out.println(VM);
+        else if (m.getCittaPassate().get(m.getCittaPassate().size()-1).getID()<t.getCittaPassate().get(t.getCittaPassate().size()-1).getID())
+            System.out.println(VM);
+        else
+            System.out.println(VT);
+
+
+
+    }
+
+
+
 
 
 }

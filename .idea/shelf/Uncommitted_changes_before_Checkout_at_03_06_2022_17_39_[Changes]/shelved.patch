@@ -1,0 +1,318 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"aa77e938-c88d-492d-b992-b4ab05947394\" name=\"Changes\" comment=\"aggiunta metodo trovaPercorso in Main\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"luca\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"29q4aphIPui7gfwDZcduQO4cRap\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Downloaded.Files.Path.Enabled\": \"false\",\r\n    \"Repository.Attach.Annotations\": \"false\",\r\n    \"Repository.Attach.JavaDocs\": \"false\",\r\n    \"Repository.Attach.Sources\": \"false\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"jdk.selected.JAVA_MODULE\": \"18\",\r\n    \"last_opened_file_path\": \"C:/Users/pippo/Downloads/UniBSFpLib.zip\",\r\n    \"project.structure.last.edited\": \"Global Libraries\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"Errors\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Martina\\IdeaProjects\\RovinePerdute\\src\\it\\unibs\\PgAr\\RovinePerdute\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\pippo\\eclipse-workspace\\PgAr2022_NoComment_RovinePerdute\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"it.unibs.PgAr.RovinePerdute.Main\" />\r\n      <module name=\"RovinePerdute\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"it.unibs.PgAr.RovinePerdute.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.it.unibs.PgAr.RovinePerdute.RovineMain\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"aa77e938-c88d-492d-b992-b4ab05947394\" name=\"Changes\" comment=\"\" />\r\n      <created>1653827352351</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1653827352351</updated>\r\n      <workItem from=\"1653909574318\" duration=\"1625000\" />\r\n      <workItem from=\"1654092436338\" duration=\"6030000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first commit\">\r\n      <created>1653827468023</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1653827468023</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Impostazione della selezione sul main\">\r\n      <created>1654027686761</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654027686761</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Eliminata la classe Nodo&#10;Modifica del nome delle classi: &#10;- RovinePerdute.java -&gt; InteragisciXML.java&#10;- RovineMain.java -&gt; Main.java&#10;- Città.java -&gt; Citta.java&#10;Modifica dei metodi calcola percorso nelle classi Metzili.java e Tonatiuh.java&#10;Modifica del nome di scriviGrafo in creaGrafo&#10;Modifica del metodo creaGrafo da void ora produce una LinkedList di Citta&#10;Creato metodo private scritturaTagTeam in InteragisciXML.java\">\r\n      <created>1654259216401</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654259216401</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"aggiunta metodo trovaPercorso in Main\">\r\n      <created>1654263817438</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1654263817438</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"first commit\" />\r\n    <MESSAGE value=\"Impostazione della selezione sul main\" />\r\n    <MESSAGE value=\"Eliminata la classe Nodo&#10;Modifica del nome delle classi: &#10;- RovinePerdute.java -&gt; InteragisciXML.java&#10;- RovineMain.java -&gt; Main.java&#10;- Città.java -&gt; Citta.java&#10;Modifica dei metodi calcola percorso nelle classi Metzili.java e Tonatiuh.java&#10;Modifica del nome di scriviGrafo in creaGrafo&#10;Modifica del metodo creaGrafo da void ora produce una LinkedList di Citta&#10;Creato metodo private scritturaTagTeam in InteragisciXML.java\" />\r\n    <MESSAGE value=\"aggiunta metodo trovaPercorso in Main\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"aggiunta metodo trovaPercorso in Main\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,9 +2,11 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="aa77e938-c88d-492d-b992-b4ab05947394" name="Changes" comment="aggiunta metodo trovaPercorso in Main">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Tonatiuh.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Veicolo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/it/unibs/PgAr/RovinePerdute/Veicolo.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -47,7 +49,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
+     "jdk.selected.JAVA_MODULE": "18",
+-    "last_opened_file_path": "C:/Users/pippo/Downloads/UniBSFpLib.zip",
++    "last_opened_file_path": "C:/Users/Martina/IdeaProjects/PgAr2022_NoComment_RovinePerdute/src/it/unibs/PgAr/RovinePerdute",
+     "project.structure.last.edited": "Global Libraries",
+     "project.structure.proportion": "0.15",
+     "project.structure.side.proportion": "0.2",
+@@ -56,6 +58,7 @@
+ }]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\Users\Martina\IdeaProjects\PgAr2022_NoComment_RovinePerdute\src\it\unibs\PgAr\RovinePerdute" />
+       <recent name="C:\Users\Martina\IdeaProjects\RovinePerdute\src\it\unibs\PgAr\RovinePerdute" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+@@ -78,7 +81,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.it.unibs.PgAr.RovinePerdute.RovineMain" />
++        <item itemvalue="Application.Main" />
+       </list>
+     </recent_temporary>
+   </component>
+Index: src/it/unibs/PgAr/RovinePerdute/Veicolo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package it.unibs.PgAr.RovinePerdute;\r\n\r\npublic class Veicolo {\r\n    private double carburante;\r\n\r\n    public void setCarburante(double carburante) {\r\n        this.carburante = carburante;\r\n    }\r\n\r\n    public double getCarburante() {\r\n        return carburante;\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/it/unibs/PgAr/RovinePerdute/Veicolo.java b/src/it/unibs/PgAr/RovinePerdute/Veicolo.java
+--- a/src/it/unibs/PgAr/RovinePerdute/Veicolo.java	
++++ b/src/it/unibs/PgAr/RovinePerdute/Veicolo.java	
+@@ -1,8 +1,8 @@
+ package it.unibs.PgAr.RovinePerdute;
+-
++import java.util.*;
+ public class Veicolo {
+     private double carburante;
+-
++    private LinkedList <Citta> cittaPassate = new LinkedList <>();
+     public void setCarburante(double carburante) {
+         this.carburante = carburante;
+     }
+@@ -10,4 +10,8 @@
+     public double getCarburante() {
+         return carburante;
+     }
++
++    public LinkedList<Citta> getCittaPassate() {
++        return cittaPassate;
++    }
+ }
+Index: src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package it.unibs.PgAr.RovinePerdute;\r\n\r\nimport javax.xml.stream.*;\r\nimport java.io.FileInputStream;\r\nimport java.io.FileOutputStream;\r\nimport java.util.*;\r\npublic class InteragisciXML {\r\n    //Questo metodo costituisce \"leggi XML\"\r\n    public LinkedList<Citta> creaGrafo(String filename, double[][] mappaVeicolo1, double[][] mappaVeicolo2) throws XMLStreamException {\r\n        //inizializzazione\r\n        XMLInputFactory xmlif;\r\n        XMLStreamReader xmlr = null;\r\n        LinkedList<Citta> listaCitta = new LinkedList<>();\r\n        try {\r\n            xmlif = XMLInputFactory.newInstance();\r\n            xmlr = xmlif.createXMLStreamReader(filename, new FileInputStream(filename));\r\n        } catch (Exception e) {\r\n            System.out.println(\"Errore nell'inizializzazione del reader:\");\r\n            System.out.println(e.getMessage());\r\n        }\r\n\r\n        while (xmlr.hasNext()) { // continua a leggere finché ha eventi a disposizione\r\n            if (xmlr.getEventType() == XMLStreamConstants.START_ELEMENT) {\r\n                //fino a che è diverso da un end element ed è uguale a city continua a rimanere nel while\r\n                while (xmlr.getEventType() != XMLStreamConstants.END_ELEMENT && xmlr.getLocalName().equals(\"city\")) {\r\n                    if (xmlr.getLocalName().equals(\"city\")) { //se il tag è uguale a city prende gli attributi e crea una nuova città con tali attributi\r\n                        Citta citta = new Citta(\"\", 0, 0, 0, 0);\r\n                        int numeroLink = 0;\r\n                        for (int i = 0; i < xmlr.getAttributeCount(); i++) {\r\n                            switch (i) {\r\n                                case 0 -> {\r\n                                    int ID = Integer.parseInt(xmlr.getAttributeValue(i));\r\n                                    citta.setID(ID);\r\n                                }\r\n                                case 1 -> citta.setNome(xmlr.getAttributeValue(i));\r\n                                case 2 -> {\r\n                                    int x = Integer.parseInt(xmlr.getAttributeValue(i));\r\n                                    citta.setX(x);\r\n                                }\r\n                                case 3 -> {\r\n                                    int y = Integer.parseInt(xmlr.getAttributeValue(i));\r\n                                    citta.setY(y);\r\n                                }\r\n                                case 4 -> {\r\n                                    int h = Integer.parseInt(xmlr.getAttributeValue(i));\r\n                                    citta.setH(h);\r\n                                }\r\n                            }\r\n                        }\r\n                        //entra nel while se il prossimo tag è appunto un link ed esce quando non lo è più e nel mentre conta quanti link ha questa città\r\n                        do {\r\n                            //qui passa al tag successivo\r\n                            xmlr.next();\r\n                            numeroLink += 1;\r\n                            citta.setNumeroLinkCitta(numeroLink);\r\n                        } while (xmlr.getLocalName().equals(\"link\"));\r\n                        listaCitta.add(citta);//infine aggiunge la città alla mappa alla posizione del suo id\r\n                    }\r\n                    xmlr.next(); //se non è uguale a city passo a quello dopo fino a che non arrivo a un'altra city\r\n                }//a questo punto dovrei avere la mappa piena delle città con i relativi attributi\r\n                //ricomincio la lettura del xml e ogni qualvolta leggo un tag chiamato link, metto nella tabella map al posto id della mappa e link il valore della distanza tra le due città\r\n                //fino a che è diverso da un end element ed è uguale a link continua a rimanere nel while\r\n                Tonatiuh veicolo1 = new Tonatiuh();\r\n                Metzili veicolo2 = new Metzili();\r\n                while (xmlr.getEventType() != XMLStreamConstants.END_ELEMENT && xmlr.getLocalName().equals(\"link\")) {\r\n                    if (xmlr.getLocalName().equals(\"link\")) {\r\n                        for (int i = 0; i < listaCitta.size(); i++) { //scorro tutta la linked list e per ogni città aggiungo quelle a cui è connessa\r\n                            for (int j = 0; j < listaCitta.get(i).getNumeroLinkCitta(); i++) {\r\n                                int link_a_citta = Integer.parseInt(xmlr.getAttributeValue(0)); //imposta il valore di link_a_citta = il valore dell'attributo di link alla prima posizione\r\n                                xmlr.next();\r\n                                mappaVeicolo1[i][link_a_citta] = veicolo1.calcolaDistanza(listaCitta.get(i), listaCitta.get(link_a_citta));\r\n                                mappaVeicolo2[i][link_a_citta] = veicolo2.calcoloDistanza(listaCitta.get(i), listaCitta.get(link_a_citta));\r\n                            }\r\n                        }\r\n\r\n                    }\r\n                    xmlr.next();\r\n                }\r\n\r\n\r\n            }\r\n\r\n        }\r\n        return listaCitta;\r\n    }\r\n    public void scriviXML() throws XMLStreamException {\r\n        XMLOutputFactory xmlof;\r\n        XMLStreamWriter xmlw = null;\r\n        try {\r\n            xmlof = XMLOutputFactory.newInstance();\r\n            xmlw = xmlof.createXMLStreamWriter(new FileOutputStream(\"Routes.xml\"), \"utf-8\");\r\n            xmlw.writeStartDocument(\"utf-8\", \"1.0\");\r\n        } catch (Exception e) {\r\n            System.out.println(\"Errore nell'inizializzazione del writer:\");\r\n            System.out.println(e.getMessage());\r\n        }\r\n        //inizio del doocumento: PRIMO TAG <routes>\r\n        xmlw.writeStartDocument(\"routes\");\r\n\r\n        scritturaTagTeam(xmlw, \"Tonathiu\", 0, 0);\r\n\r\n        scritturaTagTeam(xmlw, \"Metztli\", 0, 0);\r\n\r\n        //fine del documento: CHIUSURA PRIMO TAG <routes>\r\n        xmlw.writeEndDocument();\r\n    }\r\n\r\n    private void scritturaTagTeam(XMLStreamWriter xmlw, String team_name, double carburante_utilizzato, int numero_citta_toccate) throws XMLStreamException {\r\n        xmlw.writeStartElement(\"route\");\r\n        xmlw.writeAttribute(\"team\", team_name );\r\n        xmlw.writeAttribute(\"cost\", String.valueOf(carburante_utilizzato));\r\n        xmlw.writeAttribute(\"cities\", String.valueOf(numero_citta_toccate));\r\n        /*\r\n        for (int i=0; i<citta.lenght; i++){ //nome vettore da modificare citta solo per esempio\r\n            xmlw.writeStartElement(\"city\");\r\n            xmlw.writeAttribute(\"id\", citta(i).getId.toString()); //come sopra\r\n            xmlw.writeAttribute(\"name\", citta(i).getName.toString()); //come sopra\r\n            xmlw.writeEndElement();\r\n        }\r\n        */\r\n        xmlw.writeEndElement();\r\n    }\r\n\r\n    //agg metodo per ricerca percorso migliore\r\n\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java b/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java
+--- a/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java	
++++ b/src/it/unibs/PgAr/RovinePerdute/InteragisciXML.java	
+@@ -83,8 +83,8 @@
+         }
+         return listaCitta;
+     }
+-    public void scriviXML() throws XMLStreamException {
+-        XMLOutputFactory xmlof;
++    public void scriviXML(Tonatiuh t, Metzili m) throws XMLStreamException {
++        XMLOutputFactory xmlof= null;
+         XMLStreamWriter xmlw = null;
+         try {
+             xmlof = XMLOutputFactory.newInstance();
+@@ -97,9 +97,9 @@
+         //inizio del doocumento: PRIMO TAG <routes>
+         xmlw.writeStartDocument("routes");
+ 
+-        scritturaTagTeam(xmlw, "Tonathiu", 0, 0);
++        scritturaTagTeam(xmlw, "Tonathiu", t.getCarburante(), t.getCittaPassate().size());
+ 
+-        scritturaTagTeam(xmlw, "Metztli", 0, 0);
++        scritturaTagTeam(xmlw, "Metztli", m.getCarburante(), m.getCittaPassate().size());
+ 
+         //fine del documento: CHIUSURA PRIMO TAG <routes>
+         xmlw.writeEndDocument();
+@@ -121,7 +121,44 @@
+         xmlw.writeEndElement();
+     }
+ 
+-    //agg metodo per ricerca percorso migliore
++    public void ricercaPercorso (Veicolo v, double[][]mappa, int livello, LinkedList <Citta> citta){
++        boolean found = false;
++        double minimo = 1000000000.0;
++        int indice = 0;
++        int i=0;
++        do{
++
++            for (int j=0; j<livello; j++) {
++                if (minimo > mappa[i][j] && mappa[i][j] > 0) {
++                    minimo = mappa[i][j];
++
++                    indice = j;
++
++                }
+ 
++            }
++            v.getCittaPassate().add(citta.get(indice));
++            v.setCarburante(v.getCarburante()+mappa[i][indice]);
++            i = indice;
++
++
++        }while (indice != citta.size()-1);
++    }
++
++    public void vinto (Tonatiuh t, Metzili m){
++        if (t.getCarburante()>m.getCarburante())
++            System.out.println("Ha vinto Metzili");
++        else if (m.getCarburante()>t.getCarburante())
++            System.out.println("Ha vinto Tonatiuh");
++        else if (m.getCittaPassate().size()>t.getCittaPassate().size())
++            System.out.println("Ha vinto Tonatiuh");
++        else if (m.getCittaPassate().size()<t.getCittaPassate().size())
++            System.out.println("Ha vinto Metzili");
++        else if (m.getCittaPassate().get(m.getCittaPassate().size()-1).getID()<t.getCittaPassate().get(t.getCittaPassate().size()-1).getID())
++            System.out.println("Ha vinto Metzili");
++        else
++            System.out.println("Ha vinto Tonatiuh");
++
++    }
+ 
+ }
+Index: src/it/unibs/PgAr/RovinePerdute/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package it.unibs.PgAr.RovinePerdute;\r\n\r\n\r\nimport it.unibs.fp.mylib.MyMenu;\r\n\r\nimport javax.xml.stream.XMLStreamException;\r\nimport java.util.LinkedList;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) throws XMLStreamException {\r\n    //Far scegliere all'utente quale mappa scegliere\r\n        InteragisciXML rovine = new InteragisciXML();\r\n        double[][] mappaTonatiuh;\r\n        double[][] mappaMetzili;\r\n        LinkedList<Citta> listaCitta = new LinkedList<>();\r\n        int scelta;\r\n        String[] voci = {\"Mappa da 5\", \"Mappa da 12\", \"Mappa da 50\", \"Mappa da 200\", \"Mappa da 2000\", \"Mappa da 10000\"};\r\n        MyMenu menu = new MyMenu(\"Scegli mappa: \", voci);\r\n        do {\r\n            scelta = menu.scegli();\r\n            switch (scelta) {\r\n                case 1 -> {\r\n                    mappaTonatiuh = new double[5][5];\r\n                    mappaMetzili = new double[5][5];\r\n                    listaCitta = rovine.creaGrafo(\"Map5.xml\", mappaTonatiuh, mappaMetzili);\r\n                    //determina percorso migliore veicolo1\r\n                    trovaPercorso(mappaTonatiuh);\r\n                    //determina percorso migliore veicolo2\r\n                    //riempi XML e stampalo\r\n                }\r\n                case 2 -> {\r\n                    mappaTonatiuh = new double[12][12];\r\n                    mappaMetzili = new double[12][12];\r\n                    listaCitta = rovine.creaGrafo(\"Map12.xml\", mappaTonatiuh, mappaMetzili);\r\n                }\r\n                case 3 -> {\r\n                    mappaTonatiuh = new double[50][50];\r\n                    mappaMetzili = new double[50][50];\r\n                    listaCitta = rovine.creaGrafo(\"Map50.xml\", mappaTonatiuh, mappaMetzili);\r\n                }\r\n                case 4 -> {\r\n                    mappaTonatiuh = new double[200][200];\r\n                    mappaMetzili = new double[200][200];\r\n                    listaCitta = rovine.creaGrafo(\"Map200.xml\", mappaTonatiuh, mappaMetzili);\r\n                }\r\n                case 5 -> {\r\n                    mappaTonatiuh = new double[2000][2000];\r\n                    mappaMetzili =  new double[2000][2000];\r\n                    listaCitta = rovine.creaGrafo(\"Map2000.xml\", mappaTonatiuh, mappaMetzili);\r\n                }\r\n                case 6 -> {\r\n                    mappaTonatiuh = new double[10000][10000];\r\n                    mappaMetzili = new double[10000][10000];\r\n                    listaCitta = rovine.creaGrafo(\"Map10000.xml\", mappaTonatiuh, mappaMetzili);\r\n                }\r\n            }\r\n        }while(scelta != 0);\r\n    }\r\n\r\n    private static void trovaPercorso(double[][] mappa){\r\n        double distanzaPercorsa;\r\n        int i=0;\r\n        int j= mappa.length;\r\n        do {\r\n            if (mappa[i][j] != 0) {\r\n                distanzaPercorsa = +mappa[i][j];\r\n                i = j;\r\n                j = mappa.length;\r\n            } else j--;\r\n        }while(mappa[i][mappa.length]!=0);\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/it/unibs/PgAr/RovinePerdute/Main.java b/src/it/unibs/PgAr/RovinePerdute/Main.java
+--- a/src/it/unibs/PgAr/RovinePerdute/Main.java	
++++ b/src/it/unibs/PgAr/RovinePerdute/Main.java	
+@@ -1,17 +1,29 @@
+ package it.unibs.PgAr.RovinePerdute;
+ 
+ 
+-import it.unibs.fp.mylib.MyMenu;
++
+ 
+ import javax.xml.stream.XMLStreamException;
+ import java.util.LinkedList;
+ 
+ public class Main {
++
++
++    public static final int C = 5;
++    public static final int DOD = 12;
++    public static final int CIN = 50;
++    public static final int DC = 200;
++    public static final int DM = 2000;
++    public static final int M = 10000;
++
++
+     public static void main(String[] args) throws XMLStreamException {
+     //Far scegliere all'utente quale mappa scegliere
+         InteragisciXML rovine = new InteragisciXML();
+         double[][] mappaTonatiuh;
+         double[][] mappaMetzili;
++        Metzili m = new Metzili();
++        Tonatiuh t = new Tonatiuh();
+         LinkedList<Citta> listaCitta = new LinkedList<>();
+         int scelta;
+         String[] voci = {"Mappa da 5", "Mappa da 12", "Mappa da 50", "Mappa da 200", "Mappa da 2000", "Mappa da 10000"};
+@@ -19,54 +31,87 @@
+         do {
+             scelta = menu.scegli();
+             switch (scelta) {
+-                case 1 -> {
+-                    mappaTonatiuh = new double[5][5];
+-                    mappaMetzili = new double[5][5];
++                case 1:
++                    mappaTonatiuh = new double[C][C];
++                    mappaMetzili = new double[C][C];
+                     listaCitta = rovine.creaGrafo("Map5.xml", mappaTonatiuh, mappaMetzili);
+                     //determina percorso migliore veicolo1
+-                    trovaPercorso(mappaTonatiuh);
++                    rovine.ricercaPercorso(t, mappaTonatiuh, C, listaCitta);
+                     //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, C, listaCitta);
+                     //riempi XML e stampalo
+-                }
+-                case 2 -> {
+-                    mappaTonatiuh = new double[12][12];
+-                    mappaMetzili = new double[12][12];
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
++                case 2:
++                    mappaTonatiuh = new double[DOD][DOD];
++                    mappaMetzili = new double[DOD][DOD];
+                     listaCitta = rovine.creaGrafo("Map12.xml", mappaTonatiuh, mappaMetzili);
+-                }
+-                case 3 -> {
+-                    mappaTonatiuh = new double[50][50];
+-                    mappaMetzili = new double[50][50];
++                    //determina percorso migliore veicolo1
++                    rovine.ricercaPercorso(t, mappaTonatiuh, DOD, listaCitta);
++                    //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, DOD, listaCitta);
++                    //riempi XML e stampalo
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
++                case 3:
++                    mappaTonatiuh = new double[CIN][CIN];
++                    mappaMetzili = new double[CIN][CIN];
+                     listaCitta = rovine.creaGrafo("Map50.xml", mappaTonatiuh, mappaMetzili);
+-                }
+-                case 4 -> {
+-                    mappaTonatiuh = new double[200][200];
+-                    mappaMetzili = new double[200][200];
++                    //determina percorso migliore veicolo1
++                    rovine.ricercaPercorso(t, mappaTonatiuh, CIN, listaCitta);
++                    //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, CIN, listaCitta);
++                    //riempi XML e stampalo
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
++                case 4:
++                    mappaTonatiuh = new double[DC][DC];
++                    mappaMetzili = new double[DC][DC];
+                     listaCitta = rovine.creaGrafo("Map200.xml", mappaTonatiuh, mappaMetzili);
+-                }
+-                case 5 -> {
+-                    mappaTonatiuh = new double[2000][2000];
+-                    mappaMetzili =  new double[2000][2000];
++                    //determina percorso migliore veicolo1
++                    rovine.ricercaPercorso(t, mappaTonatiuh, DC, listaCitta);
++                    //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, DC, listaCitta);
++                    //riempi XML e stampalo
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
++                case 5:
++                    mappaTonatiuh = new double[DM][DM];
++                    mappaMetzili =  new double[DM][DM];
+                     listaCitta = rovine.creaGrafo("Map2000.xml", mappaTonatiuh, mappaMetzili);
+-                }
+-                case 6 -> {
+-                    mappaTonatiuh = new double[10000][10000];
+-                    mappaMetzili = new double[10000][10000];
++                    //determina percorso migliore veicolo1
++                    rovine.ricercaPercorso(t, mappaTonatiuh, DM, listaCitta);
++                    //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, DM, listaCitta);
++                    //riempi XML e stampalo
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
++                case 6:
++                    mappaTonatiuh = new double[M][M];
++                    mappaMetzili = new double[M][M];
+                     listaCitta = rovine.creaGrafo("Map10000.xml", mappaTonatiuh, mappaMetzili);
+-                }
++                    //determina percorso migliore veicolo1
++                    rovine.ricercaPercorso(t, mappaTonatiuh, M, listaCitta);
++                    //determina percorso migliore veicolo2
++                    rovine.ricercaPercorso(m, mappaMetzili, M, listaCitta);
++                    //riempi XML e stampalo
++                    rovine.scriviXML(t, m);
++                    //stampa chi ha vinto
++                    rovine.vinto(t, m);
++                    break;
+             }
+         }while(scelta != 0);
+     }
+ 
+-    private static void trovaPercorso(double[][] mappa){
+-        double distanzaPercorsa;
+-        int i=0;
+-        int j= mappa.length;
+-        do {
+-            if (mappa[i][j] != 0) {
+-                distanzaPercorsa = +mappa[i][j];
+-                i = j;
+-                j = mappa.length;
+-            } else j--;
+-        }while(mappa[i][mappa.length]!=0);
+-    }
++
+ }
